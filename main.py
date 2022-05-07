@@ -13,7 +13,7 @@ def main():
 
 @app.get("/active")
 def active():
-    return JSONResponse({"gati": True, "ekart": True})
+    return JSONResponse({"gati": True, "ekart": True, "dtdc": True})
 
 
 @app.get("/gati")
