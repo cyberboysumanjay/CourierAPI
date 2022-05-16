@@ -10,10 +10,10 @@ def get_data(tracking_id):
         return raw_data
     else:
         raw_data["status"] = True
+        raw_data['tracking_id'] = tracking_id
         raw_data['data'] = []
         for r in resp:
             data = {}
-            data['tracking_id'] = tracking_id
             data['activity'] = r['activityType']
             data['date'] = r['dateWithNoSuffix']
             data['time'] = r['time']
@@ -23,6 +23,3 @@ def get_data(tracking_id):
             raw_data['data'].append(data)
         return raw_data
     return None
-
-
-# print(get_data("Z74562053"))
