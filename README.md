@@ -173,6 +173,8 @@ The response JSON Object looks something like this -
   ]
 }
 ```
+## Deployment
+[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/cyberboysumanjay/CourierAPI)
 ##### :star: the Repo in case you liked it :)
 ##### Made with :heart: in India
 
