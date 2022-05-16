@@ -12,9 +12,8 @@ This API supports multiple courier services.
 Here is a complete list of supported services.
 1. Ekart Logistics (ekart)
 2. DTDC (dtdc)
-3. Gati Express (dati)
-4. Blue Dart (bluedart)
-5. More to be added soon..
+3. Gati Express (gati)
+4. More to be added soon..
 
 Feel free to create a PR for adding support for more courier service providers or wait for them to ship an order to me :smile:
 ![-----------------------------------------------------](https://raw.githubusercontent.com/cyberboysumanjay/web/master/colored.png)
