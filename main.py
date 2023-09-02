@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from api import gati, ekart, dtdc
-
+from api import gati, ekart, dtdc, bluedart
 
 app = FastAPI()
 
@@ -13,7 +12,7 @@ def main():
 
 @app.get("/active")
 def active():
-    return JSONResponse({"gati": True, "ekart": True, "dtdc": True})
+    return JSONResponse({"gati": True, "ekart": True, "dtdc": True, "bluedart": True})
 
 
 @app.get("/gati")
@@ -30,3 +29,8 @@ def _ekart(trackingId: str):
 @app.get("/dtdc/{trackingId}")
 def _dtdc(trackingId: str):
     return JSONResponse(dtdc.get_data(trackingId))
+
+
+@app.get("/bluedart/{trackingId}")
+def _bluedart(trackingId: str):
+    return JSONResponse(bluedart.get_data(trackingId))
